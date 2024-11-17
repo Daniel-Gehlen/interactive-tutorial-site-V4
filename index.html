@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevTutorial</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">DevTutorial</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#media">Media</a></li>
+            <li><a href="#forms">Forms</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#animations">Animations</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="section hero parallax-section">
+        <div class="hero-content">
+            <h1 class="fade-in">Web Development Interactive Tutorial</h1>
+            <p class="fade-in">Explore modern web development techniques with hands-on examples</p>
+            <a href="#media" class="btn fade-in">Get Started</a>
+        </div>
+    </section>
+
+    <section id="media" class="section">
+        <h2 class="section-title fade-in">Media Elements</h2>
+        <div class="container">
+            <div class="demo-box fade-in">
+                <h3>Audio Player</h3>
+                <audio controls>
+                    <source src="audio.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+
+            <div class="demo-box fade-in">
+                <h3>Video Player</h3>
+                <video controls width="100%">
+                    <source src="video.mp4" type="video/mp4">
+                    Your browser does not support the video element.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <section id="forms" class="section">
+        <h2 class="section-title fade-in">Interactive Forms</h2>
+        <div class="container">
+            <div class="demo-box fade-in">
+                <form class="modern-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Preferences:</label>
+                        <div class="checkbox-group">
+                            <label>
+                                <input type="checkbox" value="html"> HTML
+                            </label>
+                            <label>
+                                <input type="checkbox" value="css"> CSS
+                            </label>
+                            <label>
+                                <input type="checkbox" value="javascript"> JavaScript
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" rows="4"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="events" class="section">
+        <h2 class="section-title fade-in">Event Handling</h2>
+        <div class="container">
+            <div class="demo-box fade-in">
+                <div id="event-demo" class="interactive-box">
+                    <p>Interact with me!</p>
+                    <small>Try clicking, hovering, or dragging</small>
+                </div>
+
+                <div id="event-log" class="event-log">
+                    <h4>Event Log:</h4>
+                    <div id="log-content"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="animations" class="section">
+        <h2 class="section-title fade-in">Animations</h2>
+        <div class="container">
+            <div class="animation-grid">
+                <div class="animation-box fade-in" animation="rotate">
+                    <div class="animation-content">Rotate</div>
+                </div>
+                <div class="animation-box fade-in" animation="scale">
+                    <div class="animation-content">Scale</div>
+                </div>
+                <div class="animation-box fade-in" animation="slide">
+                    <div class="animation-content">Slide</div>
+                </div>
+                <div class="animation-box fade-in" animation="bounce">
+                    <div class="animation-content">Bounce</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2 class="section-title fade-in">Contact Us</h2>
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info fade-in">
+                    <h3>Get in Touch</h3>
+                    <p>Have questions? We'd love to hear from you.</p>
+                    <div class="contact-details">
+                        <p>email@example.com</p>
+                        <p>(123) 456-7890</p>
+                        <p>123 Web Dev Street</p>
+                    </div>
+                </div>
+
+                <form class="contact-form fade-in">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+	<footer class="footer">
+		<div class="footer-content">
+			<div class="footer-section">
+				<h3>DevTutorial</h3>
+				<p>Interactive web development tutorials and examples for modern web applications.</p>
+			</div>
+			<div class="footer-section">
+				<div class="social-links">
+					<a href="https://github.com/Daniel-Gehlen" class="social-link" target="_blank">
+						<i class="fa-github"></i>
+					</a>
+					<a href="https://www.linkedin.com/in/daniel-gehlen/" class="social-link" target="_blank">
+						<i class="fa-linkedin"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<p>© 2024 DevTutorial. All rights reserved.</p>
+		</div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
